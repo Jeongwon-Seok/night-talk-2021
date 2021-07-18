@@ -1,0 +1,14 @@
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+
+@import "components/status-bar.css";
+
+/* Screens */
+
+@import "screens/index.css";
+
+body {
+  background-color: var(--background-blue);
+}

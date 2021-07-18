@@ -1,0 +1,104 @@
+.start-header {
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.start-header__imoge {
+  margin-bottom: 50px;
+}
+
+@keyframes twinkleStar {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+.fa-moon {
+  color: rgb(192, 166, 240);
+}
+
+.fa-star {
+  color: whitesmoke;
+}
+
+.fa-star:hover {
+  animation: twinkleStar 0.9s ease-in-out infinite;
+}
+
+.start-header__text {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  margin-bottom: 70px;
+}
+
+.start-header__text span {
+  font-size: 22px;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.start-header__text p {
+  font-size: 13px;
+  display: block;
+  width: 320px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-form input {
+  height: 50px;
+  font-family: "Times New Roman", Times, serif;
+  width: 80%;
+}
+
+#login-form input:not([type="submit"]) {
+  border: none;
+  border-bottom: 0.2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#login-form input:not([type="submit"]):focus {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 10px;
+  transition: background-color 1s ease-in-out;
+}
+#login-form input:not([type="submit"])::placeholder {
+  font-size: 18px;
+}
+
+#login-form input[type="submit"] {
+  background-color: rgba(91, 172, 138, 0.35);
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0px;
+  color: rgb(192, 166, 240);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  border: none;
+}
+
+#login-form a {
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(255, 255, 255, 0.5);
+}
