@@ -1,0 +1,79 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: rgba(36, 45, 121, 0.2);
+  padding: 10px 0px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  margin-top: -15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(162, 157, 238, 0.5);
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes infoRotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+#friends-display-link > .fa-info-circle {
+  color: rgb(162, 157, 238, 0.8);
+  animation: infoRotate 2s ease-in-out infinite;
+}
+
+@keyframes chevronR-Rotate {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+#friends-display-link > .fa-chevron-right {
+  color: rgb(162, 157, 238, 0.8);
+  animation: chevronR-Rotate 1s ease-in-out infinite;
+}
+
+.friends-screen__channel {
+  margin-top: -10px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.friends-screen__channel-header:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.friends-screen__friends {
+  margin-top: 15px;
+  border-top: 1px solid rgba(175, 171, 236, 0.4);
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+
+.main-screen {
+  overflow: auto;
+  height: 75vh;
+}
+
+.main-screen::-webkit-scrollbar {
+  width: 10px;
+}
