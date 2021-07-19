@@ -1,10 +1,14 @@
 .settings__setting {
   padding: 20px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 20px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.settings__setting__divide {
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .settings__setting i {
@@ -15,4 +19,9 @@
 
 .settings__setting-column:last-child {
   opacity: 0.5;
+}
+
+.settings__setting-column {
+  color: rgb(102, 163, 233);
+  position: relative;
 }

@@ -4,12 +4,14 @@
 
 .more-suggestions {
   margin-top: 50px;
-  border-top: var(--main-border);
+  border-top: 1px solid rgb(183, 179, 236);
   padding-top: 40px;
 }
 
 .more-suggestions__title {
   margin-bottom: 30px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(32, 149, 245, 0.664);
 }
 
 .more-suggestions__icons {
@@ -26,7 +28,7 @@
 .more-suggestions__icon-image {
   width: 60px;
   height: 60px;
-  background-color: var(--yellow);
+  background-color: rgba(95, 92, 236, 0.753);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -37,4 +39,9 @@
 .more-suggestions__icon-image i {
   font-size: 32px;
   color: white;
+}
+
+.more-suggestions__icon-text {
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(32, 149, 245, 0.664);
 }

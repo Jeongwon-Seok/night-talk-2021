@@ -1,9 +1,11 @@
 .alt-header {
-  padding: var(--horizontal-space);
+  padding: 5px var(--horizontal-space);
   margin-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgb(188, 191, 235);
+  font-family: "Courier New", Courier, monospace;
 }
 .alt-header__column {
   width: 33%;

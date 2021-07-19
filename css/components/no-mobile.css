@@ -3,15 +3,38 @@
   z-index: 99;
   height: 100vh;
   width: 100vw;
-  background-color: tomato;
+  background-color: rgb(55, 73, 133);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
   display: flex;
   top: 0;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 32px;
 }
 
-@media screen and (max-width: 645px) {
+#no-mobile__question {
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+#no-mobile__message {
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+#no-mobile__alert {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.466);
+}
+
+#no-mobile span {
+  text-align: center;
+  margin: 0px 10vw;
+}
+
+@media screen and (max-width: 645px) and (min-height: 700px) {
   #no-mobile {
     display: none;
   }

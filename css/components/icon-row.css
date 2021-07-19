@@ -1,6 +1,7 @@
 .icon-row {
   display: flex;
   justify-content: space-between;
+  margin-top: 5px;
 }
 
 .icon-row__icon {
@@ -12,9 +13,77 @@
 
 .icon-row__icon i {
   font-size: 35px;
+  color: rgba(153, 194, 233, 0.753);
 }
 
 .icon-row__icon span {
   margin-top: 18px;
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(0, 140, 255);
+}
+
+@keyframes rotateQrcode {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(1turn);
+  }
+}
+
+@keyframes movingbook {
+  0% {
+    transform: none;
+  }
+  33.3% {
+    transform: translateX(5px);
+  }
+  66.6% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes bigId {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes shakeEnvelope {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.fa-qrcode:hover {
+  animation: rotateQrcode 1s ease-in-out infinite;
+}
+
+.fa-address-book:hover {
+  animation: movingbook 0.5s ease-in-out infinite;
+}
+
+.fa-fingerprint:hover {
+  animation: bigId 0.5s ease-in-out infinite;
+}
+
+.fa-envelope:hover {
+  animation: shakeEnvelope 0.25s ease-in-out infinite;
+}
+
+.fa-info-circle--more {
+  margin-left: 5px;
 }
