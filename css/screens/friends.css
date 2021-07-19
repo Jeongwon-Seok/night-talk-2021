@@ -79,3 +79,28 @@
 .main-screen::-webkit-scrollbar {
   width: 10px;
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: rgb(52, 51, 126);
+  opacity: 1;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 128px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 0.4s;
+}

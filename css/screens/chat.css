@@ -1,6 +1,5 @@
 #chat-screen {
-  background-color: #abc1d1;
-  height: 500vh;
+  background-color: var(--background-blue);
 }
 
 #chat-screen .alt-header,
@@ -8,7 +7,7 @@
   top: 0;
   position: fixed;
   width: 100%;
-  background-color: #abc1d1;
+  background-color: var(--background-blue);
   box-sizing: border-box;
 }
 
@@ -17,7 +16,7 @@
 }
 
 #chat-screen .alt-header {
-  top: 10px;
+  top: 28.5px;
   z-index: 1;
 }
 
@@ -42,9 +41,10 @@
 
 .chat__timestamp {
   color: white;
-  background-color: #92a4b2;
-  padding: 15px;
+  background-color: #668ada8e;
+  padding: 10px 15px;
   font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
   border-radius: 25px;
   margin-bottom: 25px;
 }
@@ -63,8 +63,15 @@
 }
 
 .message__author {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
   margin-bottom: 5px;
   display: block;
+}
+
+.message__time {
+  color: rgba(255, 255, 255, 0.336);
+  font-family: "Times New Roman", Times, serif;
 }
 
 .message__info {
@@ -73,12 +80,15 @@
 }
 
 .message__bubble {
-  background-color: white;
-  padding: 13px;
-  font-size: 18px;
+  background-color: rgba(99, 131, 235, 0.589);
+  color: rgba(0, 0, 0, 0.582);
+  padding: 10px 13px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 15px;
   border-top-left-radius: 0px;
   margin-right: 5px;
+  margin-top: 3px;
 }
 
 .message__time,
@@ -92,7 +102,7 @@
 }
 
 .message-row--own .message__bubble {
-  background-color: var(--yellow);
+  background-color: rgba(147, 156, 238, 0.781);
   border-top-right-radius: 0px;
   border-top-left-radius: 15px;
   margin-right: 0px;
@@ -103,11 +113,81 @@
   flex-direction: row-reverse;
 }
 
+@keyframes messageCome {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.message-row:nth-child(2) {
+  opacity: 0;
+  animation: messageCome 1s linear forwards;
+}
+
+.message-row:nth-child(3) {
+  opacity: 0;
+  animation: messageCome 1s linear forwards;
+  animation-delay: 1s;
+}
+
+.message-row:nth-child(4) {
+  opacity: 0;
+  animation: messageCome 1s linear forwards;
+  animation-delay: 2s;
+}
+
+.message-row:nth-child(5) {
+  opacity: 0;
+  animation: messageCome 1s linear forwards;
+  animation-delay: 3s;
+}
+
+.message-row:nth-child(6) {
+  opacity: 0;
+  animation: messageCome 1s linear forwards;
+  animation-delay: 4s;
+}
+
+.message-row:nth-child(7) {
+  opacity: 0;
+  animation: messageCome 1s linear forwards;
+  animation-delay: 5s;
+}
+
+.message-row:nth-child(8) {
+  opacity: 0;
+  animation: messageCome 1s linear forwards;
+  animation-delay: 6s;
+}
+
+.message-row:nth-child(9) {
+  opacity: 0;
+  animation: messageCome 1s linear forwards;
+  animation-delay: 7s;
+}
+
+.message-row:nth-child(10) {
+  opacity: 0;
+  animation: messageCome 1s linear forwards;
+  animation-delay: 8s;
+}
+
+.message-row:nth-child(11) {
+  opacity: 0;
+  animation: messageCome 1s linear forwards;
+  animation-delay: 9s;
+}
+
 .reply {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  background-color: var(--background-blue);
+  color: white;
   display: flex;
   justify-content: space-between;
   padding: 5px 25px;
@@ -131,10 +211,15 @@
 .reply input {
   padding: 14px;
   width: 100%;
+  background-color: rgb(147, 153, 240);
   border: var(--main-border);
   border-radius: 25px;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
+}
+
+.reply input::placeholder {
+  color: white;
 }
 
 .reply__column:last-child > i,
@@ -150,7 +235,7 @@
 }
 
 .reply__column button {
-  background-color: var(--yellow);
+  background-color: white;
   border: none;
   width: 40px;
   height: 40px;
@@ -166,7 +251,7 @@
 }
 
 .reply__column button {
-  background-color: var(--yellow);
+  background-color: white;
 }
 
 .reply .reply__column:first-child,

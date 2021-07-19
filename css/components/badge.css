@@ -20,3 +20,19 @@
   border-radius: 100%;
   top: -7px;
 }
+
+@keyframes rotateBadge {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(1turn);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.chat-badge:hover {
+  animation: rotateBadge 1s ease-in-out infinite;
+}
